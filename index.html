@@ -50,6 +50,10 @@ header p{color:var(--muted);margin-top:8px;font-size:0.95rem}
 .btn{font-size:0.78rem;padding:6px 14px;border-radius:6px;border:1px solid var(--border);background:#0f172a;color:var(--text);text-decoration:none;cursor:pointer}
 .btn:hover{background:var(--accent);color:#000;border-color:var(--accent)}
 
+.install-bar{position:fixed;bottom:0;left:0;right:0;background:var(--card);border-top:1px solid var(--border);padding:14px 20px;display:flex;justify-content:center;align-items:center;gap:16px;z-index:100}
+.install-bar button{background:var(--accent);color:#000;border:none;padding:10px 22px;border-radius:8px;font-weight:700;cursor:pointer;font-size:0.9rem}
+.install-bar span{color:var(--muted);font-size:0.85rem}
+
 #lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;justify-content:center;align-items:center;z-index:200;padding:20px}
 #lightbox.active{display:flex}
 #lightbox img{max-width:90%;max-height:85%;border-radius:8px;box-shadow:0 0 40px rgba(0,0,0,.5)}
@@ -125,6 +129,7 @@ header p{color:var(--muted);margin-top:8px;font-size:0.95rem}
 <span class="toggle">▼</span>
 </div>
 <div class="section-body">
+
 <div class="photo-grid">
 <div class="photo-card" onclick="openBox(this)"><img src="https://raw.githubusercontent.com/Marco241254/casa-emergenza/main/Casetta%20pompe%20e%20elettrovalvole%20jpeg.png" alt="Casetta Pompe E Elettrovalvole Jpeg"><div class="caption">Casetta Pompe E Elettrovalvole Jpeg</div></div>
 <div class="photo-card" onclick="openBox(this)"><img src="https://raw.githubusercontent.com/Marco241254/casa-emergenza/main/Prato%20sotto.png" alt="Prato Sotto"><div class="caption">Prato Sotto</div></div>
@@ -179,9 +184,6 @@ header p{color:var(--muted);margin-top:8px;font-size:0.95rem}
 <div class="photo-card" onclick="openBox(this)"><img src="https://raw.githubusercontent.com/Marco241254/casa-emergenza/main/wallbox_garage_zona_new.jpg" alt="Wallbox Garage Zona New"><div class="caption">Wallbox Garage Zona New</div></div>
 <div class="photo-card" onclick="openBox(this)"><img src="https://raw.githubusercontent.com/Marco241254/casa-emergenza/main/youtaky_controller.jpg" alt="Youtaky Controller"><div class="caption">Youtaky Controller</div></div>
 </div>
-</div>
-</div>
-
 <!-- ==================== LIVELLO 3: MANUALI ==================== -->
 <div class="section" id="sec-manuali">
 <div class="section-header" onclick="toggle('sec-manuali')">
@@ -193,7 +195,7 @@ header p{color:var(--muted);margin-top:8px;font-size:0.95rem}
 <div class="pdf-list">
 <div class="pdf-row">
 <div class="pdf-icon">📕</div>
-<div class="pdf-info"><strong>Modula Plus — Manuale Utente</strong><span>Caldaia/PDC — THIT9550 15-35 kW</span></div>
+<div class="pdf-info"><strong>Modula Plus — Manuale Utente</strong><span>Caldaia / Pompa di calore — THIT9550 15-35 kW</span></div>
 <div class="pdf-actions"><a class="btn" href="https://raw.githubusercontent.com/Marco241254/casa-emergenza/main/THIT9550%20Modula%20Plus%2015-35%20per%20utente.pdf" target="_blank">Scarica</a><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/THIT9550%20Modula%20Plus%2015-35%20per%20utente.pdf" target="_blank">Vedi</a></div>
 </div>
 <div class="pdf-row">
@@ -262,62 +264,62 @@ header p{color:var(--muted);margin-top:8px;font-size:0.95rem}
 <div class="md-row">
 <div class="md-icon">📝</div>
 <div class="md-info"><strong>Infrastruttura</strong><span>00_infrastruttura (1).md</span></div>
-<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/00_infrastruttura%20(1).md" target="_blank">Apri</a></div>
+<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/00_infrastruttura%20%281%29.md" target="_blank">Apri</a></div>
 </div>
 <div class="md-row">
 <div class="md-icon">📝</div>
 <div class="md-info"><strong>Home Assistant</strong><span>01_home_assistant (1).md</span></div>
-<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/01_home_assistant%20(1).md" target="_blank">Apri</a></div>
+<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/01_home_assistant%20%281%29.md" target="_blank">Apri</a></div>
 </div>
 <div class="md-row">
 <div class="md-icon">📝</div>
 <div class="md-info"><strong>PDC Hitachi</strong><span>02_pdc_hitachi (1).md</span></div>
-<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/02_pdc_hitachi%20(1).md" target="_blank">Apri</a></div>
+<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/02_pdc_hitachi%20%281%29.md" target="_blank">Apri</a></div>
 </div>
 <div class="md-row">
 <div class="md-icon">📝</div>
 <div class="md-info"><strong>Fotovoltaico</strong><span>03_fotovoltaico (1).md</span></div>
-<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/03_fotovoltaico%20(1).md" target="_blank">Apri</a></div>
+<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/03_fotovoltaico%20%281%29.md" target="_blank">Apri</a></div>
 </div>
 <div class="md-row">
 <div class="md-icon">📝</div>
 <div class="md-info"><strong>Tesla Wallbox</strong><span>04_tesla_wallbox (1).md</span></div>
-<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/04_tesla_wallbox%20(1).md" target="_blank">Apri</a></div>
+<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/04_tesla_wallbox%20%281%29.md" target="_blank">Apri</a></div>
 </div>
 <div class="md-row">
 <div class="md-icon">📝</div>
 <div class="md-info"><strong>Energia (1)</strong><span>05_energia (1).md</span></div>
-<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/05_energia%20(1).md" target="_blank">Apri</a></div>
+<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/05_energia%20%281%29.md" target="_blank">Apri</a></div>
 </div>
 <div class="md-row">
 <div class="md-icon">📝</div>
 <div class="md-info"><strong>Energia (2)</strong><span>05_energia (2).md</span></div>
-<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/05_energia%20(2).md" target="_blank">Apri</a></div>
+<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/05_energia%20%282%29.md" target="_blank">Apri</a></div>
 </div>
 <div class="md-row">
 <div class="md-icon">📝</div>
 <div class="md-info"><strong>Clima e Temperature</strong><span>06_clima_temperature (1).md</span></div>
-<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/06_clima_temperature%20(1).md" target="_blank">Apri</a></div>
+<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/06_clima_temperature%20%281%29.md" target="_blank">Apri</a></div>
 </div>
 <div class="md-row">
 <div class="md-icon">📝</div>
 <div class="md-info"><strong>Operazioni</strong><span>07_operazioni (1).md</span></div>
-<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/07_operazioni%20(1).md" target="_blank">Apri</a></div>
+<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/07_operazioni%20%281%29.md" target="_blank">Apri</a></div>
 </div>
 <div class="md-row">
 <div class="md-icon">📝</div>
 <div class="md-info"><strong>Riferimenti</strong><span>08_riferimenti (2).md</span></div>
-<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/08_riferimenti%20(2).md" target="_blank">Apri</a></div>
+<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/08_riferimenti%20%282%29.md" target="_blank">Apri</a></div>
 </div>
 <div class="md-row">
 <div class="md-icon">📝</div>
 <div class="md-info"><strong>Failover Fibra LTE</strong><span>10_failover_fibra_su_lte_udr7_tplink_mr600 (1).md</span></div>
-<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/10_failover_fibra_su_lte_udr7_tplink_mr600%20(1).md" target="_blank">Apri</a></div>
+<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/10_failover_fibra_su_lte_udr7_tplink_mr600%20%281%29.md" target="_blank">Apri</a></div>
 </div>
 <div class="md-row">
 <div class="md-icon">📝</div>
 <div class="md-info"><strong>Irrigazione Prati (crdownload)</strong><span>400_irrigazione_prati (1).md.crdownload</span></div>
-<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/400_irrigazione_prati%20(1).md.crdownload" target="_blank">Apri</a></div>
+<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/400_irrigazione_prati%20%281%29.md.crdownload" target="_blank">Apri</a></div>
 </div>
 <div class="md-row">
 <div class="md-icon">📝</div>
@@ -357,7 +359,7 @@ header p{color:var(--muted);margin-top:8px;font-size:0.95rem}
 <div class="md-row">
 <div class="md-icon">📝</div>
 <div class="md-info"><strong>README Documentazione</strong><span>README (3).md</span></div>
-<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/README%20(3).md" target="_blank">Apri</a></div>
+<div class="md-actions"><a class="btn" href="https://github.com/Marco241254/casa-emergenza/blob/main/README%20%283%29.md" target="_blank">Apri</a></div>
 </div>
 </div>
 </div>
